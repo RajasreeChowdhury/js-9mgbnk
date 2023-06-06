@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .bar {
+      fill-opacity: 0.8;
+    }
+    .axis text {
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <svg id="container"></svg>
+  <script src="script.js"></script>
+  <div id="tooltip" class="hidden">
+    <ul>
+  <p id="companyName"></p>
+  <li><span class="cmv"></span><p id="currentMarketValue"></p></li>
+
+  <li><span class="iv"></span><p id="investedValue"></p></li>
+
+  <li><span class="ugl"></span><p id="unrealisedGainLoss"></p></li>
+  </div>
+  <button id="view-all">View All</button>
+</body>
+</html>
